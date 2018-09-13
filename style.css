@@ -1,0 +1,38 @@
+/* Style sheet for the homework assignment */
+
+/*Styling for body */
+body {
+    font-family: 'Arial','Helvetica Neue', Helvetica, sans-serif;
+    color: black; /*Need to change this #777 later */
+    background: #777; /*Background is #777 per spec, in case change for testing */
+    width: 960px;
+    font-size: 18px;
+}
+
+header, nav, section, aside, footer {
+    background: #ebebeb; /*background should be #ebebeb per spec */ 
+}
+
+article {
+    background: #777; /*background should be #777 per spec */ 
+    color: #ebebeb; /*Need to change this to #ebebeb later */
+}
+
+h1, p {
+    color: #777; /* #777 per spec */
+    background: #ebebeb; /*background should be #ebebeb per spec */
+}
+
+section {
+    width: 495px;
+    
+}
+
+header, nav, footer {
+    display: block;
+}
+
+aside {
+    float: right;
+}
+
