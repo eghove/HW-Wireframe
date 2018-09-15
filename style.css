@@ -9,27 +9,41 @@ body {
     font-size: 18px; /*Set at 18px per spec */
     margin: auto;
     padding: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
- /*vheader, nav, footer {
+ /*header, nav, footer {
     margin-top: 1%;
     margin-bottom: 2%;
 }
 */
+
+/*Trying to make sure the container that contains the section and aside takes up the available space */
+.content-container {
+    flex-grow: 1;
+}
 
 header, nav, section, aside, footer {
     background: #ebebeb; /*background should be #ebebeb per spec */ 
     /*border: solid black 10px; */
 }
 
-header, nav {
+header {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 20px;
+}
+
+nav {
+    margin-bottom: 10px;
+    padding: 20px;
 }
 
 footer {
     margin-top: 10px;
 }
+
 article {
     background: #777; /*background should be #777 per spec */ 
     color: #ebebeb; /*Need to change this to #ebebeb later */
@@ -55,7 +69,8 @@ section {
 
 aside {
     float: right;
-    width: 465px;
+    width: 445px;
+    margin-left: 20px;
     height: 400px;
 
 }
@@ -66,6 +81,8 @@ p {
 }
 
 footer {
-    width: 960px;
+    width: 960px; 
     margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
